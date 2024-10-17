@@ -1,0 +1,29 @@
+.contact-bar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    background-color: #3F72AF; /* Color for the contact bar */
+    color: #F9F7F7; /* Text color */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 0.875rem; /* Smaller font size (you can adjust as needed) */
+}
+
+.contact-info {
+    margin-right: 40px; /* Add some space between contact info and icons */
+}
+
+.social-media {
+    display: flex;
+    margin-right: 20px;
+    gap: 15px; /* Space between social media icons */
+}
+
+.social-media a {
+    color: #F9F7F7; /* Text color for links */
+    text-decoration: none; /* No underline */
+    font-size: 0.875rem; /* Smaller font size for icons */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

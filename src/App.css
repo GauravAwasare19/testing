@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;  /* Make sure the body and html elements take full height */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Full viewport height */
+}
+
+.app-container {
+  flex: 1;  /* This makes the content area grow to fill available space */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/*#F9F7F7  
+#DBE2EF
+#3F72AF
+#112D4E  darker

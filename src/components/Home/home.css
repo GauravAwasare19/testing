@@ -1,0 +1,231 @@
+
+/* Container for the entire homepage */
+.homepage-container {
+  padding: 0; /* Remove padding from container */
+  margin: 0; /* Remove margin */
+  max-width: 100%; /* Ensure max-width is 100% */
+}
+
+
+/* Custom caption */
+.custom-caption {
+  position: absolute;
+  left: 30px; /* Add space on the left */
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px; /* Add padding around the caption */
+  color: #fff;
+  max-width: 400px; /* Restrict width for the caption text */
+}
+
+.custom-caption h5 {
+  font-size: 2rem; /* Larger font size */
+  margin: 0;
+}
+
+/* Adjust control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker buttons for contrast */
+  border-radius: 50%; /* Rounded icon background */
+}
+
+/* Featured products section */
+.featured-products {
+  margin-bottom: 40px; /* Space below section */
+}
+
+.featured-products h2 {
+  font-size: 2rem; /* Font size for section title */
+  text-align: center; /* Center section title */
+  color: #112D4E; /* Dark navy blue for section title */
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around; /* Evenly distribute products */
+  flex-wrap: wrap; /* Wrap to next line on smaller screens */
+}
+
+/* Individual product styling */
+.product-item {
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside product card */
+  text-align: center; /* Center text in product card */
+  width: 30%; /* Width of each product item */
+  margin: 10px 0; /* Vertical margin */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+  background-color: #F9F7F7; /* Light cream background for products */
+}
+
+/* Image styling for products */
+.product-item img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+/* Product item hover effect */
+.product-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* About Us and Call-to-Action sections */
+.about-us,
+.call-to-action {
+  margin-bottom: 40px; /* Space below sections */
+  text-align: center; /* Center text */
+}
+
+.about-us h2,
+.call-to-action h2 {
+  font-size: 2rem; /* Font size for section titles */
+  color: #112D4E; /* Dark navy blue for titles */
+}
+
+.about-us p,
+.call-to-action p {
+  font-size: 1.2rem; /* Font size for section text */
+  color: #3F72AF; /* Blue-gray for section text */
+}
+
+/* Call to action link styling */
+.call-to-action a {
+  color: #007BFF; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold link text */
+}
+.call-to-action a:hover {
+  text-decoration: none; /* Underline on hover */
+}
+
+
+
+/* Testimonials section */
+
+.testimonials {
+  margin-bottom: 40px; /* Space below section */
+  text-align: center; /* Center the section title */
+}
+
+.testimonials h2 {
+  font-size: 1rem; /* Font size for section title */
+  color: #112D4E; /* Dark navy blue for the section title */
+}
+
+/* Testimonial grid layout */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid with a minimum width of 300px */
+  gap: 10px; 
+  margin-top: 30px;
+}
+
+/* Individual testimonial styling */
+.testimonial-item {
+  padding: 10px;
+  border-left: 2px solid #3F72AF; /* Vertical line for emphasis */
+  color: #3f72af; /* Blue-gray text color */
+  font-size: 1.0rem; 
+  position: relative; 
+  line-height: 1.4; 
+}
+
+/* Adding a quotation mark before each testimonial */
+.testimonial-item:before {
+  content: '“';
+  font-size: 2rem; 
+  color: #3F72AF; 
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+/* Author name styling */
+.testimonial-item h4 {
+  margin-top: 15px;
+  font-size:medium;
+  font-weight: bold;
+  color: #112d4e; /* Dark navy for the author name */
+  text-align: right; /* Align the author name to the right */
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    padding: 15px; /* Reduce padding for smaller screens */
+    font-size: 1rem; /* Adjust font size on smaller screens */
+  }
+}
+
+
+
+
+/* Two-column layout styling */
+.two-column-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0; /* Space around the section */
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Restrict the maximum width */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #3F72AF; /* Blue-gray for text */
+}
+
+.text-container h2 {
+  color: #112D4E; /* Dark navy blue for the title */
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column; /* Stack the image and text on smaller screens */
+  }
+
+  .image-container, 
+  .text-container {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+  }
+
+  .text-container {
+    padding-top: 0;
+  }
+}
+
+
+/* whatsapp button */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp_float i {
+  margin-top: 16px;
+}

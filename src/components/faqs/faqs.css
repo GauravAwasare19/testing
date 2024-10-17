@@ -1,0 +1,98 @@
+/* FAQ page styling */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+.faqs-container {
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Centered content */
+    box-sizing: border-box;
+    color: #333;
+    background-color: #fff; /* White background for content */
+    max-width: 1200px; /* Max width for large screens */
+    border-radius: 10px; /* Smooth rounded corners */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.faq {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Slight background for each FAQ block */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.faq:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.faq h3 {
+    font-size: 1.6rem;
+    color: #0056b3; /* Matching title color */
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.faq p strong {
+    color: #333;
+}
+
+.faq:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .faqs-container {
+        padding: 40px 5%; /* More padding on large screens */
+        max-width: 1200px; /* Limit the container's width */
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq h3 {
+        font-size: 1.4rem; /* Slightly smaller on smaller screens */
+    }
+
+    .faq p {
+        font-size: 1rem;
+    }
+}
+ /* whatsapp button */
+ .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  
+  .whatsapp_float i {
+    margin-top: 16px;
+  }
